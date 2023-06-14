@@ -1,6 +1,21 @@
 ---
 layout: default
 title: Homepage
+banner:
+    heading: A whole new world
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto provident delectus ducimus obcaecati facilis voluptatem, soluta, nihil, dolore repudiandae facere eum eveniet! Nostrum assumenda praesentium animi perferendis, accusamus iusto?
+    image: 
+        image_path: uploads/travel/travel-2.jpg
+        alt_text: a placeholder alt description
+text_blurbs:
+    heading: A fascinating heading about the site 
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempora autem consequuntur tempore laudantium eaque, magnam est porro fugiat, qui magni eum dolores blanditiis iure totam at iste placeat. Veritatis?
+    button: 
+        url_text: Read More 
+        url_link: '#'
+    image: 
+        image_path: uploads/travel/travel-6.jpg
+        alt_text: a placeholder alt description
 seo:
   title: 
   description:
@@ -10,6 +25,31 @@ seo:
   hide-from-google: false
 ---
 
+<!-------------- Hero Banner Section ---------------->
+
+<section> 
+
+    {% include hero-banner.html %}
+
+</section>
+
+<!--------------- Text Blurbs ------------>
+<section> 
+    <img src="{{ page.text_blurbs.image.image_path }}">
+    <h2>{{ page.text_blurbs.heading }}</h2>
+    <p>{{ page.text_blurbs.description }}<p>
+    <a href="{{ page.text_blurbs.button.url_link }}"> {{ page.text_blurbs.button.url_text }} </a>
+</section>
+
+<!--------------- Upcoming Travel Destinations ------------->
+<section>
+    <h2> Upcoming Travel Destinations </h2>
+
+</section>
+<!---------------- Recently on the Blog ------------------->
+<section> 
+
+</section>
 <!-- {{site.data.site-settings.global-cta-options}} -->
 <!------------------------ Featured blog loop ------------------------>
 <section class="p-5p">
