@@ -8,18 +8,18 @@ layout: default
 
 <!--------- Post ------------->
 
-<section class="p-5">
+<section class="">
 
 
-        <div class="flex justify-between intro pt-6 p-4 text-center margin-b-2 max-w-screen-lg mx-auto">
+        <div class="flex justify-between items-center p-5p text-center margin-b-2 max-w-screen-lg mx-auto border-b border-black mb-24">
             
             <div> 
-                <p class="text-sm uppercase tracking-wide text-zinc-600"> by <span class="font-bold"> {{ page.author }}  </span> </p> 
+                <p class="text-sm uppercase tracking-wide text-zinc-600 m-0"> by <span class="font-bold"> {{ page.author }}  </span> </p> 
             </div>
 
-            <h2 class="text-6xl font-serif mt-4 mb-8"> {{ page.intro_heading }} </h2>
+            <h2 class="text-5xl tracking-widest font-serif m-0 uppercase"> {{ page.intro_heading }} </h2>
             
-            <p class="text-sm uppercase tracking-wide text-zinc-600"> </span>| {{ page.date | date_to_string }} </p>
+            <p class="text-sm uppercase tracking-wide text-zinc-600 m-0"> </span>| {{ page.date | date_to_string }} </p>
          
         </div>
 

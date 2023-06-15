@@ -870,6 +870,9 @@ video {
 .m-10 {
   margin: 2.5rem;
 }
+.m-0 {
+  margin: 0px;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -957,6 +960,9 @@ video {
 }
 .mb-20 {
   margin-bottom: 5rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 .line-clamp-2 {
   overflow: hidden;
