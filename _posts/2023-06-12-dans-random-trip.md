@@ -1,7 +1,7 @@
 ---
 layout: modular-post
-title: Dans random trip
-description: >-
+title: Dans Random trip
+description:
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum,
   ab, eum dolore perspiciatis tenetur alias aspernatur
 author: '`dan'
@@ -9,7 +9,7 @@ featured: true
 categories:
   - travel
   - life
-featured_image: /uploads/travel/travel-1.jpg
+featured_image: /uploads/travel/travel-2.jpg
 page_blocks:
   - _id: banner
     title: Image Banner
