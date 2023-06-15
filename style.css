@@ -40,3 +40,7 @@ div {
 body {
     font-weight: 300;
 }
+
+body a {
+    letter-spacing: 0.1rem;
+}

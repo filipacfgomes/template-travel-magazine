@@ -5,10 +5,8 @@ description: >-
     Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. 
 author: Tina May
 banner:
-    image: 
-        image_path: /uploads/travel/travel-2.jpg
-        alt_text: a placeholder alt description
-featured_image: uploads/travel/travel-4.jpg
+    image_path: /uploads/travel/blog-bg-10-top-view.jpg
+featured_image: /uploads/travel/blog-bg-15-longboard.jpg
 featured: true
 intro_heading: This is a heading
 seo: 
@@ -19,7 +17,7 @@ seo:
     hide-from-google: false
 ---
 
-<h3> Lorem ipsum dolor sit amet, consectetur </h3>
+<h3 class="text-center font-normal uppercase mb-16"> Lorem ipsum dolor sit amet, consectetur </h3>
 
 <p>
 

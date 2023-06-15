@@ -4,19 +4,19 @@ title: Homepage
 banner:
     heading: A whole new world.
     description: Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breathe.
-    image_path: /uploads/travel/travel-1.jpg
+    image_path: /uploads/travel/blog-bg-12-boat-bikini.jpg
 text_blurbs:
-    heading: A fascinating heading about the site 
-    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempora autem consequuntur tempore laudantium eaque, magnam est porro fugiat, qui magni eum dolores blanditiis iure totam at iste placeat. Veritatis?
+    heading: A fascinating heading about the site.  
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempora autem consequuntur tempore laudantium eaque, magnam est porro fugiat, qui magni eum dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat, qui magni eum dolores blanditiis iure totam at iste placeat. Veritatis?  dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat,  dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat,  dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat,  dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat, 
     image: 
-        image_path: /uploads/travel/travel-3.jpg
-button: 
-    url: Read More 
-    url: '#'
+        image_path: /uploads/travel/blog-bg-13-suitcase.jpg
+    button: 
+        url_text: Read More 
+        url_link: '#'
 itinerary:
-    heading: Upcoming trips
+    heading: Upcoming travel destinations
     image: 
-        image_path: uploads/travel/travel-6.jpg
+        image_path: /uploads/travel/blog-bg-14-greece.jpg
         alt_text: a placeholder alt description
         overlay_text: Currently in... 
     destinations:
@@ -51,60 +51,68 @@ seo:
 </section>
 
 <!--------------- Text Blurbs ------------>
+
 <section class="bg-light grid grid-cols-2">
-    <div class="col-span-1 p-32">  
-        <img src="{{ page.text_blurbs.image.image_path }}">
+    <div class="col-span-1 ml-32 mt-32 mb-32 flex">  
+        <img class="flex justify-end" src="{{ page.text_blurbs.image.image_path }}">
     </div>
-    <div class="col-span-1"> 
-        <h2 class="text-9xl">{{ page.text_blurbs.heading }}</h2>
-        <p>{{ page.text_blurbs.description }}<p>
-        <a href="{{ page.text_blurbs.button.url_link }}"> {{ page.text_blurbs.button.url_text }} </a>
+    <div class="col-span-1 ml-12"> 
+        <h2 class="text-6xl -ml-64 md:max-w-md font-serif text-center mt-44 mb-12">{{ page.text_blurbs.heading }}</h2>
+        <p class="mb-16 mr-24">{{ page.text_blurbs.description }}<p>
+        <a class="font-serif text-2xl mb-16 uppercase border-b border-black" href="{{ page.text_blurbs.button.url_link }}"> {{ page.text_blurbs.button.url_text }} </a>
     </div> 
     
 </section>
 
 <!--------------- Upcoming Travel Destinations ------------->
 
-<section>
-    <h2>{{ page.itinerary.heading }}</h2>
-    <ul> 
-        {% for item in page.itinerary.destinations %} 
-        <li> 
-            <div>{{ item.location }}</div>
-            <div>{{ item.date }}</div>
-        </li>
-        {% endfor %}
-    </ul>
-    <img src="{{ page.itinerary.image.image_path }}" alt="{{ page.itinerary.image.alt | default: page.itinerary.heading }}">
-    <div>{{ page.itinerary.image.overlay_text }}</div>
+<section class="border-t border-black px-10p">
+    <h2 class="text-5xl mt-24 font-serif uppercase tracking-widest mb-16 text-center">{{ page.itinerary.heading }}</h2>
+    <div class="grid grid-cols-2 gap-16"> 
+        <div class="col-span-1"> 
+            <ul>    
+            {% for item in page.itinerary.destinations %} 
+            <li> 
+                <div class="flex justify-start">{{ item.location }}</div>
+                <div class="flex justify-end">{{ item.date }}</div>
+            </li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="col-span-1 bg-[url('{{ page.itinerary.image.image_path }}')] relative pb-[32vw]"> 
+            <div class="bg-background inline-block font-serif px-10 py-2 text-6xl absolute bottom-5"> {{ page.itinerary.image.overlay_text }}</div>
+        </div> 
+       
+    </div> 
 </section>
 
 <!---------------- Recently on the Blog / Featured blog loop ------------------->
 <!-- {{site.data.site-settings.global-cta-options}} -->
 
-<section class="p-5p">
+<section class="mt-20">
 
-    <h2>{{ page.blog.heading }}</h2>
+    <h2 class="text-4xl font-serif uppercase tracking-widest text-center mb-16">{{ page.blog.heading }}</h2>
 
-    <div class="max-w-screen-xl mx-auto md:columns-3">
-
+    <div class="max-w-screen-full mx-auto grid grid-cols-4">
 
         {% assign featured_posts = site.posts | where: 'featured', true %}
         
         {% for post in featured_posts limit:3 %}
 
-            <a class="post-item p-2 break-inside-avoid block mb-4" href="{{ post.url }}">
+            <a class="post-item p-2 flex flex-col {% cycle 'col-span-1', 'col-span-2', 'col-span-1' %}" href="{{ post.url }}">
 
                 <!-- Background image -->
-                <div class="bg-cover 
-                {% cycle 'aspect-square', 'aspect-portrait', 'aspect-landscape' %}" 
-                style="background-image:url( '{{ post.featured_image }}' );"></div>
+                <div class="bg-cover pb-[22vw]" style="background-image:url( '{{ post.featured_image }}' );"></div>
 
                 <!-- Text container  -->
-                <div class="p-4 relative -top-4 left-4 bg-white">
-                    <h2 class="mt-1 font-serif text-3xl"> {{ post.title }} </h2>
-                    <p>{{ post.description }} </p>
-                    <span>{{ page.blog.button.text }}</span>
+                <div class="p-5 flex-grow flex flex-col justify-between relative">
+                    <div> 
+                        <h2 class="mt-1 mb-4 sans-serif uppercase text-lg font-normal"> {{ post.title }} </h2>
+                        <p class="mb-4">{{ post.description }} </p>
+                    </div>
+                    <div> 
+                        <span class="font-serif text-2xl mb-16 uppercase border-b border-black">{{ page.blog.button.text }}</span>
+                    </div>
                 </div>
             </a>
 
