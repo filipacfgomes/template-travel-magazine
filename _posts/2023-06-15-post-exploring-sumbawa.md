@@ -8,9 +8,9 @@ banner:
     image: 
         image_path: /uploads/travel/travel-2.jpg
         alt_text: a placeholder alt description
-featured: true
-categories: [travel]
 featured_image: uploads/travel/travel-4.jpg
+featured: true
+intro_heading: This is a heading
 seo: 
     title: 
     description: 
@@ -19,10 +19,27 @@ seo:
     hide-from-google: false
 ---
 
-## Exploring Sumbawa
+<h3> Lorem ipsum dolor sit amet, consectetur </h3>
+
+<p>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?
+
+</p>
+
+<img src="/uploads/travel/travel-5.jpg"> 
+
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est? </p>
+
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est? </p>
+
+<blockquote>
+"Sometimes you just have to break a board to see what it's capable of" 
+</blockquote>
+
+<img src="/uploads/travel/travel-6.jpg"> 
+
