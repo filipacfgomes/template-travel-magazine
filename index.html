@@ -2,20 +2,17 @@
 layout: default
 title: Homepage
 banner:
-    heading: A whole new world
+    heading: A whole new world.
     description: Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breathe.
-    image: 
-        image_path: uploads/travel/travel-2.jpg
-        alt_text: a placeholder alt description
+    image_path: /uploads/travel/travel-1.jpg
 text_blurbs:
     heading: A fascinating heading about the site 
     description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempora autem consequuntur tempore laudantium eaque, magnam est porro fugiat, qui magni eum dolores blanditiis iure totam at iste placeat. Veritatis?
-    button: 
-        url_text: Read More 
-        url_link: '#'
     image: 
-        image_path: uploads/travel/travel-6.jpg
-        alt_text: a placeholder alt description
+        image_path: /uploads/travel/travel-3.jpg
+button: 
+    url: Read More 
+    url: '#'
 itinerary:
     heading: Upcoming trips
     image: 
@@ -54,11 +51,16 @@ seo:
 </section>
 
 <!--------------- Text Blurbs ------------>
-<section> 
-    <img src="{{ page.text_blurbs.image.image_path }}">
-    <h2>{{ page.text_blurbs.heading }}</h2>
-    <p>{{ page.text_blurbs.description }}<p>
-    <a href="{{ page.text_blurbs.button.url_link }}"> {{ page.text_blurbs.button.url_text }} </a>
+<section class="bg-light grid grid-cols-2">
+    <div class="col-span-1 p-32">  
+        <img src="{{ page.text_blurbs.image.image_path }}">
+    </div>
+    <div class="col-span-1"> 
+        <h2 class="text-9xl">{{ page.text_blurbs.heading }}</h2>
+        <p>{{ page.text_blurbs.description }}<p>
+        <a href="{{ page.text_blurbs.button.url_link }}"> {{ page.text_blurbs.button.url_text }} </a>
+    </div> 
+    
 </section>
 
 <!--------------- Upcoming Travel Destinations ------------->

@@ -59,8 +59,9 @@ module.exports = {
       },
       colors: {
         'dark': 'rgb(63 63 70);',
-        'light': 'rgb(244 244 245);',
+        'light': '#EDECEB',
         'featured': 'rgb(248 113 113);',
+
       },
     },
   },

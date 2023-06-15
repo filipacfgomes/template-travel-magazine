@@ -1,8 +1,16 @@
-<section> 
+<section class="grid grid-cols-5">
 
-    <img src="{{ page.banner.image.image_path }}"" alt="{{ page.banner.image.alt_text}}">
-    <h1 class="text-xl "> {{page.banner.heading | default: page.title}} </h1>
-    <p class="uppercase"> {{page.banner.description | default: page.description }}</p>
-    <a href="{{page.banner.button.url}}">{{page.banner.button.text}} </a>
+    <div class="col-span-1"> </div>
+
+
+    <div class="col-span-4 bg-[url('{{page.banner.image_path}}')] min-h-screen flex items-center"> 
+        <div class="-ml-15p py-10px px-5p"> 
+            <h1 class="font-serif text-[13vw] text-white leading-snug"> {{page.banner.heading | default: page.title}} </h1>
+        
+            <p class="font-sans uppercase text-white tracking-wide font-normal md:text-xl md:max-w-lg"> {{page.banner.description | default: page.description }}</p>
+    
+            <a href="{{page.banner.button.url}}">{{page.banner.button.url}} </a>
+        </div>
+    </div>
 
 </section>

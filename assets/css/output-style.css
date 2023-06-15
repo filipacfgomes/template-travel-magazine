@@ -852,9 +852,15 @@ video {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.-ml-15p {
+  margin-left: -15%;
 }
 .-mt-1 {
   margin-top: -0.25rem;
@@ -870,6 +876,9 @@ video {
 }
 .mb-8 {
   margin-bottom: 2rem;
+}
+.ml-10 {
+  margin-left: 2.5rem;
 }
 .mr-1 {
   margin-right: 0.25rem;
@@ -925,6 +934,9 @@ video {
 .min-h-\[60\] {
   min-height: 60;
 }
+.min-h-screen {
+  min-height: 100vh;
+}
 .w-0 {
   width: 0px;
 }
@@ -950,11 +962,17 @@ video {
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .flex-nowrap {
   flex-wrap: nowrap;
@@ -986,10 +1004,6 @@ video {
 .border-2 {
   border-width: 2px;
 }
-.border-y-2 {
-  border-top-width: 2px;
-  border-bottom-width: 2px;
-}
 .border-t-2 {
   border-top-width: 2px;
 }
@@ -997,13 +1011,13 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(225 29 72 / var(--tw-border-opacity));
 }
-.border-slate-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(71 85 105 / var(--tw-border-opacity));
-}
 .bg-\[\#D0CEC9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(208 206 201 / var(--tw-bg-opacity));
+}
+.bg-\[\#EDECEB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 236 235 / var(--tw-bg-opacity));
 }
 .bg-dark {
   background-color: rgb(63 63 70);;
@@ -1044,6 +1058,19 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
+.bg-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 236 235 / var(--tw-bg-opacity));
+}
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+.bg-\[url\(\'\/uploads\/travel\/travel-1\.jpg\'\)\] {
+  background-image: url('/uploads/travel/travel-1.jpg');
+}
+.bg-\[url\(\'\{\{page\.banner\.image_path\}\}\'\)\] {
+  background-image: url('{{page.banner.image_path}}');
+}
 .bg-cover {
   background-size: cover;
 }
@@ -1057,8 +1084,14 @@ video {
 .p-1 {
   padding: 0.25rem;
 }
+.p-10 {
+  padding: 2.5rem;
+}
 .p-2 {
   padding: 0.5rem;
+}
+.p-32 {
+  padding: 8rem;
 }
 .p-4 {
   padding: 1rem;
@@ -1069,12 +1102,13 @@ video {
 .p-5p {
   padding: 5%;
 }
-.p-8 {
-  padding: 2rem;
-}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.px-5p {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .py-2 {
   padding-top: 0.5rem;
@@ -1088,6 +1122,9 @@ video {
 }
 .text-center {
   text-align: center;
+}
+.font-sans {
+  font-family: Montserrat, sans-serif;
 }
 .font-serif {
   font-family: Italiana, serif;
@@ -1104,21 +1141,32 @@ video {
   font-size: 2.25rem;
   line-height: 1;
 }
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+.text-\[13vw\] {
+  font-size: 13vw;
+}
+.text-lg {
+  font-size: 1.125rem;;
+  line-height: 1.2;
 }
 .text-sm {
   font-size: 0.875rem;;
   line-height: 1.2;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.2;
-}
 .text-xs {
   font-size: 0.75rem;
   line-height: 1.2;
+}
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
 }
 .font-bold {
   font-weight: 700;
@@ -1126,14 +1174,21 @@ video {
 .font-light {
   font-weight: 300;
 }
+.font-normal {
+  font-weight: 400;
+}
 .uppercase {
   text-transform: uppercase;
+}
+.leading-snug {
+  line-height: .95;
 }
 .tracking-wide {
   letter-spacing: 0.025em;
 }
 .text-light {
-  color: rgb(244 244 245);;
+  --tw-text-opacity: 1;
+  color: rgb(237 236 235 / var(--tw-text-opacity));
 }
 .text-rose-500 {
   --tw-text-opacity: 1;
@@ -1243,6 +1298,9 @@ body {
   .md\:grid {
     display: grid;
   }
+  .md\:max-w-lg {
+    max-width: 32rem;
+  }
   .md\:columns-3 {
     -moz-columns: 3;
          columns: 3;
@@ -1258,6 +1316,10 @@ body {
   }
   .md\:overflow-x-auto {
     overflow-x: auto;
+  }
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.2;
   }
 }
 
