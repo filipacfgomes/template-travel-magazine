@@ -1052,11 +1052,20 @@ video {
 .self-center {
   align-self: center;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .overflow-x-scroll {
   overflow-x: scroll;
 }
 .whitespace-nowrap {
   white-space: nowrap;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 .border-2 {
   border-width: 2px;
@@ -1129,6 +1138,14 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-stone-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
 .bg-\[url\(\'\/uploads\/travel\/blog-bg-14-greece\.jpg\'\)\] {
   background-image: url('/uploads/travel/blog-bg-14-greece.jpg');
 }
@@ -1146,6 +1163,12 @@ video {
 }
 .bg-\[url\(\'\{\{page\.before-image\}\}\'\)\] {
   background-image: url('{{page.before-image}}');
+}
+.bg-\[url\(\'\{\{page\.before_image\}\}\'\)\] {
+  background-image: url('{{page.before_image}}');
+}
+.bg-\[url\(\'\{\{page\.featured_image\}\}\'\)\] {
+  background-image: url('{{page.featured_image}}');
 }
 .bg-cover {
   background-size: cover;

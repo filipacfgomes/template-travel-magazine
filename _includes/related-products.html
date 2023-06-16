@@ -1,0 +1,22 @@
+<section>
+    <h4> Related Products </h4>   
+        <div class="grid grid-cols-3"> 
+
+            {% assign relevant-products = site.products-presets | where_exp:"product","product.url != page.url" %}
+
+            {% for product in relevant-products limit:3 %}
+            
+    <!------- background image & text container -->
+            <a class="p-2 mb-4 block col-span-1" href="{{ product.url }}">
+                <div class="bg-cover aspect-square" style="background-image:url( '{{ product.featured_image }}' );">
+                </div>
+                <div class="p-4 relative">
+                    <h3 class="mt-1 sans-serif text-2xl"> {{ product.title }} </h3>
+                    <p> {{product.description}}</p>
+                    <p> {{product.price}}</p>
+                </div>
+            </a>
+            
+        {% endfor %}
+        </div>
+</section>

@@ -8,12 +8,12 @@ layout: default
 
 <section class="grid grid-cols-2">
     <div class="col-span-1"> 
-        <h1> {{page.product_name}}</h1>
+        <h1> {{page.title}}</h1>
         <h2> {{page.subtitle}}</h2>
         <p> {{page.description}}</p>
         <a href="#"> Buy now </a>
     </div>
-    <div class="col-span-1 bg-[url('{{page.featured-image}}')]"> 
+    <div class="col-span-1 bg-[url('{{page.featured_image}}')]"> 
         
     </div>
 </section>
@@ -22,15 +22,15 @@ layout: default
 
 <section class="grid grid-cols-3">
     <div class="col-span-2">
-        <div class="col-span-1 aspect-square bg-[url('{{page.before-image}}')]"></div>
+        <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
 
         <div class="grid grid-cols-6">
-            <div class="col-span-1 aspect-square bg-[url('{{page.before-image}}')]"></div>
-            <div class="col-span-1 aspect-square bg-[url('{{page.before-image}}')]"></div>
-            <div class="col-span-1 aspect-square bg-[url('{{page.before-image}}')]"></div>
-            <div class="col-span-1 aspect-square bg-[url('{{page.before-image}}')]"></div>
-            <div class="col-span-1 aspect-square bg-[url('{{page.before-image}}')]"></div>
-            <div class="col-span-1 aspect-square bg-[url('{{page.before-image}}')]"></div>
+            <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
+            <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
+            <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
+            <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
+            <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
+            <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
         </div>
     </div>
     <div class="col-span-1"> 
@@ -40,14 +40,18 @@ layout: default
 
 </section>
 
-<!----------- Third section / ----------->
+<!----------- Third section / How to use your ----------->
 
-<section class="grid grid-cols-3">
-    <div class="col-span-1">
-        <h2> {{site.data.preset-page.instructions.heading}}</h2>
-        <ul> {{site.data.preset-page.instructions.description}}</ul>   
+<section class="p-5p">
+    <div class="grid max-w-screen-xl mx-auto grid-cols-6">
+        <div class="col-span-2">  
+            <h2> {{site.data.preset-settings.instructions.heading}}</h2>
+            <p> {{site.data.preset-settings.instructions.description}}</p>
+        </div>
+        <div class="p-8 col-span-4">
+            {% include video.html 
+            vimeo-id=site.data.preset-settings.presets-instructions-vimeo-id %}
     </div>
-    <div class="col-span-2"> {{site.data.preset-page.instructions.url}} </div>
 </section>
 
 <!-------------- Forth section / FAQS ------------>
@@ -64,3 +68,4 @@ layout: default
 
 <!---------- Related Products ----------->
 
+{% include related-products.html %}
