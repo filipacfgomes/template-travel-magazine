@@ -1138,6 +1138,12 @@ video {
 .bg-\[url\(\'\{\{page\.featured-image\}\}\'\)\] {
   background-image: url('{{page.featured-image}}');
 }
+.bg-\[url\(\'page\.before-image\'\)\] {
+  background-image: url('page.before-image');
+}
+.bg-\[url\(\'\{\{page\.before-image\}\}\'\)\] {
+  background-image: url('{{page.before-image}}');
+}
 .bg-cover {
   background-size: cover;
 }
