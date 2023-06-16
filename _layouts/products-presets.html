@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<!----------- layout defaul cause is pulling the header and footer from the default layout ----------->
+
+<!---------- First section / Intro Product -->
+
+<section class="grid grid-cols-2">
+    <div class="col-span-1"> 
+        <h1> {{page.product_name}}</h1>
+        <h2> {{page.subtitle}}</h2>
+        <p> {{page.description}}</p>
+        <a href="#"> Buy now </a>
+    </div>
+    <div class="col-span-1 bg-[url('{{page.featured-image}}')]"> 
+        
+    </div>
+</section>
+
+<!---------- Second section / Before & After ---------->
+
+<section class="grid grid-cols-3">
+    <div class="col-span-2""> 
+
+    </div> 
+    <div class="col-span-1"> 
+        <h2> Before & After </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo totam sunt nam error mollitia repellat adipisci unde harum, neque suscipit porro ab modi itaque natus fugit in nobis quasi!</p>
+
+    </div>
+
+
+</section>
+
+<!---- 
+
+
+    SECOND  - BEFORE & AFTER 
+
+        grid-cols-3
+        col-span 2 
+            plugin before & after
+            div with grid-cols-6
+
+        col-span-1 
+            h2
+            paragrapah
+
+    THIRD - HOW TO USE YOUR PRESETS 
+        
+        grid-cols-3
+            col-span-1
+            <div> content that goes on the datafile 
+                h2
+                list 
+            </div> 
+            grid-cols-2
+            <d
+            video goes on the data file 
+
+
+    FORTH - FAQS
+
+    FIFTH - RELATED PRODUCTS 
+-->

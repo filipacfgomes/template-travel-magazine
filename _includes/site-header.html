@@ -1,13 +1,19 @@
 
-<header class="flex justify-between">
+<!-- Create a header element with some vertical & horizontal padding,and then use flexbox to create space between the logo and the nav aligning them vertically -->
 
-    <a href="/index.html" class="inline-block logo text-4xl font-serif p-10 ml-10"> LOGO </a>
+<header class="flex justify-between items-center py-8 px-5p">
 
-    <nav class="flex items-center md:justify-center md:overflow-x-auto overflow-x-scroll md:flex-wrap flex-nowrap">
+    <!-- link back to the homepage and apply some typography styling -->
+
+    <a href="/index.html" class="inline-block text-4xl font-serif tracking-wide"> LOGO </a>
+
+    <!-- we can apply these typography styles on the parent since they are inheritable styles -->
+
+    <nav class="md:justify-center md:overflow-x-auto overflow-x-scroll md:flex-wrap flex-nowrap">
 
           {% for item in site.data.site-settings.navigation %}
 
-          <a href="{{item.url}}" class="p-4 uppercase whitespace-nowrap hover:text-rose-600"> {{item.title}} </a>
+          <a href="{{item.url}}" class="p-4 uppercase whitespace-nowrap hover:text-teal-600"> {{item.title}} </a>
 
           {% endfor %}
 

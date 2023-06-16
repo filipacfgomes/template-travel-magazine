@@ -1,10 +1,8 @@
-<section>
+<section class="p-5p bg-cover bg-center flex items-center" style="background-image: url('{{page.banner.image_path}}');">
 
-    <div class="min-h-screen flex items-center" style="background-image: url('{{page.banner.image_path}}');"> 
-        <div class="px-5p"> 
-            <h1 class="font-serif text-[13vw] text-white leading-snug ml-24 mb-8"> {{page.banner.heading | default: page.title}} </h1>
-        
-            <p class="font-sans uppercase text-white tracking-wide ml-24 font-nmd:text-xl md:max-w-lg"> {{page.banner.description | default: page.description }}</p>
+        <div> 
+            <h2 class="font-serif text-[13vw] text-white leading-snug ml-24 mb-8"> {{page.banner.heading | default: page.title}} </h>
+            <p class="font-sans text-lg uppercase text-white tracking-wide font-nmd:text-xl md:max-w-lg"> {{page.banner.description | default: page.description }}</p>
     
             <a href="{{page.banner.button.url}}">{{page.banner.button.url}} </a>
         </div>
