@@ -961,6 +961,9 @@ video {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.aspect-landscape {
+  aspect-ratio: 3 / 2;
+}
 .h-full {
   height: 100%;
 }
@@ -981,6 +984,9 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-1\/2 {
+  width: 50%;
 }
 .max-w-screen-lg {
   max-width: 1024px;
@@ -1146,6 +1152,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
 }
+.bg-stone-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
+}
 .bg-\[url\(\'\/uploads\/travel\/blog-bg-14-greece\.jpg\'\)\] {
   background-image: url('/uploads/travel/blog-bg-14-greece.jpg');
 }
@@ -1173,12 +1183,22 @@ video {
 .bg-cover {
   background-size: cover;
 }
+.bg-\[length\:50vw\] {
+  background-size: 50vw;
+}
 .bg-center {
   background-position: center;
+}
+.bg-left {
+  background-position: left;
 }
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 .p-1 {
   padding: 0.25rem;
