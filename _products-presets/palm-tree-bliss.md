@@ -7,6 +7,5 @@ description: Id et qui exercitation veniam ut. Occaecat esse pariatur aliquip al
 price: $42
 featured_image: /uploads/travel/blog-bg-mock-up-magazine-2.jpg
 comparison-images:
-    - before-image: /uploads/comparison/ocean-blues-house-before-6.jpg
-      after-image: /uploads/comparison/ocean-blues-house-after-6.jpg
+    
 ---

@@ -20,36 +20,15 @@ layout: default
 
 <!---------- Second section / Before & After ---------->
 
-<section class="grid grid-cols-3 p-5p">
-    <div class="col-span-2">
-        <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
-
-        <div class="grid grid-cols-6">
-            <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
-            <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
-            <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
-            <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
-            <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
-            <div class="col-span-1 aspect-square bg-[url('{{page.before_image}}')]"></div>
-        </div>
-    </div>
-    <div class="col-span-1"> 
-        <h2> Before & After </h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo totam sunt nam error mollitia repellat adipisci unde harum, neque suscipit porro ab modi itaque natus fugit in nobis quasi!</p>
-    </div>
-
-</section>
 
 <section class="p-5p">
     <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
         <div class="col-span-3 p-8">
-
             {% include before-and-after-slider.html %}
-
         </div>
         <div class="col-span-2 p-8 self-center">
-            <h2 class="text-2xl uppercase"> Before & After </h2>
-            {{site.data.presets-settings.before-and-after-description_html}}
+            <h2 class="text-4xl uppercase font-serif tracking-widest"> Before & After </h2>
+            {{site.data.preset-settings.before-and-after-description_html}}
         </div>
 
     </div>
@@ -73,7 +52,7 @@ layout: default
 <section>
     <h2> FAQS </h2>
     <div class="flex justify-between"> 
-        {% for item in site.data.preset-page.faqs %}
+        {% for item in site.data.preset-settings.faqs %}
         <h3> {{item.question}} </h3>
         <p> {{item.answer}} </p>
         {% endfor %}

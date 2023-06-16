@@ -7,6 +7,5 @@ description: Id et qui exercitation veniam ut. Occaecat esse pariatur aliquip al
 price: $37
 featured_image: /uploads/travel/blog-bg-16-palmtree.jpg
 comparison-images: 
-    - before-image: /uploads/comparison/ocean-blues-man-before-2.jpg
-      after-image: /uploads/comparison/ocean-blues-man-after-2.jpg
+  
 ---

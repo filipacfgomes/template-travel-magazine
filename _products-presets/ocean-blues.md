@@ -7,6 +7,5 @@ description: Id et qui exercitation veniam ut. Occaecat esse pariatur aliquip al
 price: $35
 featured_image: /uploads/travel/blog-bg-mock-up-magazine-2.jpg
 comparison-images:
-    - before_image: /uploads/travel/blog-bg-12-boat-bikini.jpg
-      after_image: /uploads/travel/blog-bg-17-desert.jpg
+
 ---
