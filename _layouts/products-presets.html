@@ -7,11 +7,11 @@ layout: default
 <!---------- First section / Intro Product -->
 
 <section class="grid grid-cols-2">
-    <div class="col-span-1"> 
-        <h1> {{page.title}}</h1>
-        <h2> {{page.subtitle}}</h2>
-        <p> {{page.description}}</p>
-        <a href="#"> Buy now </a>
+    <div class="col-span-1 mt-72 mx-32"> 
+        <h1 class="font-serif text-6xl p-4"> {{page.title}}</h1>
+        <h3 class="uppercase text-lg p-4 font-normal"> {{page.subtitle}}</h3>
+        <p class="p-4 mb-4"> {{page.description}}</p>
+        <a class="p-4 m-4 uppercase bg-black text-white" href="#"> Buy now </a>
     </div>
     <div class="col-span-1 bg-[url('{{page.featured_image}}')]"> 
         
@@ -27,7 +27,7 @@ layout: default
             {% include before-and-after-slider.html %}
         </div>
         <div class="col-span-2 p-8 self-center">
-            <h2 class="text-4xl uppercase font-serif tracking-widest"> Before & After </h2>
+            <h2 class="text-4xl uppercase font-serif tracking-widest mb-6"> Before & After </h2>
             {{site.data.preset-settings.before-and-after-description_html}}
         </div>
 
@@ -37,8 +37,8 @@ layout: default
 
 <section class="p-5p">
     <div class="grid max-w-screen-xl mx-auto grid-cols-6">
-        <div class="col-span-2">  
-            <h2> {{site.data.preset-settings.instructions.heading}}</h2>
+        <div class="col-span-2 p-10p">  
+            <h2 class="text-4xl uppercase font-serif tracking-widest mb-6"> {{site.data.preset-settings.instructions.heading}}</h2>
             <p> {{site.data.preset-settings.instructions.description}}</p>
         </div>
         <div class="p-8 col-span-4">
@@ -49,16 +49,19 @@ layout: default
 
 <!-------------- Forth section / FAQS ------------>
 
-<section>
-    <h2> FAQS </h2>
-    <div class="flex justify-between"> 
-        {% for item in site.data.preset-settings.faqs %}
-        <h3> {{item.question}} </h3>
-        <p> {{item.answer}} </p>
-        {% endfor %}
-    </div>
-</section>
 
+<section class="p-10p">
+    <h2 class="text-4xl uppercase font-serif tracking-widest mb-6 border-b-2 border-black"> FAQ'S </h2>
+        
+     {% for item in site.data.preset-settings.faqs %}
+        <div class="border-b-2 border-black" x-data="{ open: false }">
+            <button @click="open = ! open"><h3 class="uppercase"> {{item.question}} </h3></button>
+            <div x-show="open" @click.outside="open = false"> <p> {{item.answer}} </p></div>
+        </div>
+       
+        {% endfor %}
+
+</section>
 <!---------- Related Products ----------->
 
 {% include related-products.html %}
