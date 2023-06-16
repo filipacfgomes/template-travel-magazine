@@ -1,0 +1,13 @@
+instructions:
+  heading: How to use your presets 
+  description: Sint cupidatat sunt irure nisi. Deserunt dolore esse incididunt consequat et pariatur. Duis sunt consectetur pariatur aliqua occaecat ea irure voluptate velit cupidatat. Irure deserunt id officia cupidatat esse cupidatat proident Lorem elit ad reprehenderit aliquip aute dolore.
+  url: '#'
+faqs:
+  - question: Frequently asked question - 1 
+    answer: Reprehenderit proident pariatur id mollit aliquip cillum aliqua proident esse quis aliquip tempor fugiat sint.
+  - question: Frequently asked question - 2
+    answer: Reprehenderit proident pariatur id mollit aliquip cillum aliqua proident esse quis aliquip tempor fugiat sint.
+  - question: Frequently asked question - 3
+    answer: Reprehenderit proident pariatur id mollit aliquip cillum aliqua proident esse quis aliquip tempor fugiat sint.
+  - question: Frequently asked question - 4
+    answer: Reprehenderit proident pariatur id mollit aliquip cillum aliqua proident esse quis aliquip tempor fugiat sint.

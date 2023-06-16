@@ -44,19 +44,23 @@ layout: default
 
 <section class="grid grid-cols-3">
     <div class="col-span-1">
-        <h2> How to use your presets </h2> 
-        <ul> </ul>   
+        <h2> {{site.data.preset-page.instructions.heading}}</h2>
+        <ul> {{site.data.preset-page.instructions.description}}</ul>   
     </div>
-    <div class="col-span-2"> video goes here </div>
-    <div> </div>
+    <div class="col-span-2"> {{site.data.preset-page.instructions.url}} </div>
 </section>
 
+<!-------------- Forth section / FAQS ------------>
 
-<!----------- Forth section / FAQS ------------>
-
-<section> 
-    <h2> FAQ's </h2>
-    
+<section>
+    <h2> FAQS </h2>
+    <div class="flex justify-between"> 
+        {% for item in site.data.preset-page.faqs %}
+        <h3> {{item.question}} </h3>
+        <p> {{item.answer}} </p>
+        {% endfor %}
+    </div>
 </section>
 
+<!---------- Related Products ----------->
 

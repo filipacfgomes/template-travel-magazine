@@ -1046,6 +1046,9 @@ video {
 .gap-4 {
   gap: 1rem;
 }
+.gap-32 {
+  gap: 8rem;
+}
 .self-center {
   align-self: center;
 }
