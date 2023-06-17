@@ -1407,69 +1407,71 @@ body a {
     letter-spacing: 0.1rem;
 }
 
-.MemberSpaceWidgetInternal__TextInput_input:not(#MemberSpaceWidgetInternal__TextInput_-).MemberSpaceWidgetInternal__TextInput_variant-primary {
-    -webkit-text-fill-color: initial;
-    background: none;
-    border-color: #1a1a1a;
-    border-radius: var(--input-border-radius);
-    border-style: solid;
-    color: var(--input-color);
-    font-family: var(--input-font-family);
-    font-size: 16px;
-    font-weight: var(--input-font-weight);
-    border: none;
-    border-bottom: 1px solid black;
-}
-
-.MemberSpaceWidgetInternal__Typography_variant-input-label, .MemberSpaceWidgetInternal__Typography_variant-input-label2 {
-    -webkit-text-fill-color: initial;
-    color: var(--label-color);
-    font-family: var(--label-font-family);
-    font-weight: var(--label-font-weight);
-    text-transform: uppercase;
-}
-
-.hover\:bg-zinc-100:hover {
+#memberspace-login-form input {
+    border: 2px solid blue;
+   }
+   
+   #memberspace-login-form label {
+       border: 2px solid yellow;
+   }
+   
+   /* Forgot Email / forgot password text */
+   #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
+       color: green;
+   }
+   
+   
+   #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
+       color: red;
+   }
+   
+   #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
+       color: blue;
+   }
+    
+   .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
+    
+   .hover\:bg-zinc-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
-
-.hover\:bg-zinc-200:hover {
+    
+   .hover\:bg-zinc-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
-
-.hover\:text-rose-500:hover {
+    
+   .hover\:text-rose-500:hover {
   --tw-text-opacity: 1;
   color: rgb(244 63 94 / var(--tw-text-opacity));
 }
-
-.hover\:text-teal-600:hover {
+    
+   .hover\:text-teal-600:hover {
   --tw-text-opacity: 1;
   color: rgb(13 148 136 / var(--tw-text-opacity));
 }
-
-.group:hover .group-hover\:w-12 {
+    
+   .group:hover .group-hover\:w-12 {
   width: 3rem;
 }
-
-.group:hover .group-hover\:border-rose-400 {
+    
+   .group:hover .group-hover\:border-rose-400 {
   --tw-border-opacity: 1;
   border-color: rgb(251 113 133 / var(--tw-border-opacity));
 }
-
-.group:hover .group-hover\:grayscale {
+    
+   .group:hover .group-hover\:grayscale {
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
-
-@media not all and (min-width: 640px) {
+    
+   @media not all and (min-width: 640px) {
   .max-sm\:hidden {
     display: none;
   }
 }
-
-@media (min-width: 640px) {
+    
+   @media (min-width: 640px) {
   .sm\:col-span-4 {
     grid-column: span 4 / span 4;
   }
@@ -1480,8 +1482,8 @@ body a {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
-
-@media (min-width: 768px) {
+    
+   @media (min-width: 768px) {
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
   }
@@ -1510,8 +1512,8 @@ body a {
     overflow-x: auto;
   }
 }
-
-@media (min-width: 1024px) {
+    
+   @media (min-width: 1024px) {
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

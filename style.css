@@ -45,24 +45,26 @@ body a {
     letter-spacing: 0.1rem;
 }
 
-.MemberSpaceWidgetInternal__TextInput_input:not(#MemberSpaceWidgetInternal__TextInput_-).MemberSpaceWidgetInternal__TextInput_variant-primary {
-    -webkit-text-fill-color: initial;
-    background: none;
-    border-color: #1a1a1a;
-    border-radius: var(--input-border-radius);
-    border-style: solid;
-    color: var(--input-color);
-    font-family: var(--input-font-family);
-    font-size: 16px;
-    font-weight: var(--input-font-weight);
-    border: none;
-    border-bottom: 1px solid black;
-}
-
-.MemberSpaceWidgetInternal__Typography_variant-input-label, .MemberSpaceWidgetInternal__Typography_variant-input-label2 {
-    -webkit-text-fill-color: initial;
-    color: var(--label-color);
-    font-family: var(--label-font-family);
-    font-weight: var(--label-font-weight);
-    text-transform: uppercase;
-}
+#memberspace-login-form input {
+    border: 2px solid blue;
+   }
+   
+   #memberspace-login-form label {
+       border: 2px solid yellow;
+   }
+   
+   /* Forgot Email / forgot password text */
+   #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
+       color: green;
+   }
+   
+   
+   #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
+       color: red;
+   }
+   
+   #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
+       color: blue;
+   }
+    
+   .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
