@@ -27,7 +27,10 @@ seo:
 		<a class="border border-black py-3 px-6"> Lightroom Presets </a>
 	</div>
 
+	<!---------- Related Products ----------->
 
-	{% include related-products.html %}
+{% assign relevant-products = site.products-presets | where_exp:"product","product.url != page.url" %}
+
+{% include related-products.html relevant-products=relevant-products %}
 	
 </section>
