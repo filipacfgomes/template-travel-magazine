@@ -1,7 +1,7 @@
 ---
 layout: default
 members-content: 
-    - title: Tips for planning the perfect trip
+    - title: Tips & Hints
       image: /uploads/travel/blog-bg-9-green-mountain.jpg
       content_html: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae impedit illo quod sequi? Earum sint quae voluptatem voluptatum et magnam fugit doloremque totam repellat, dolore vitae molestiae delectus sit ad.
     - title: Special Sant Valentine's Day 
@@ -14,8 +14,8 @@ members-content:
 
 <section> 
     <div class=" min-h-48 p-5p" style="background-image: url('/uploads/travel/blog-bg-17-desert.jpg')"> 
-        <h2 class="font-serif text-white text-8xl mb-5 ml-5"> Members Area </h2> 
-        <p class="serif text-white text-xl tracking-wide ml-5"> Welcome to our private members area. </p>
+        <h2 class="font-serif text-white text-8xl mb-5"> Members Area </h2> 
+        <p class="serif text-white text-xl tracking-wide"> Welcome to our private members area. </p>
     </div>
 
 </section>  
@@ -26,12 +26,12 @@ members-content:
 
 
 
-<section class="min-h-80 p-5p grid grid-cols-4">
+<section class="min-h-80 grid grid-cols-4 pl-5p">
 
-    <div class="col-span-1">
+    <div class="col-span-1 mt-5">
 
             {% for item in page.members-content %}
-            <a href="#{{item.title | slugify }}" class="block font-serif uppercase text-lg my-10 mr-10"> {{item.title}}</a>
+            <a href="#{{item.title | slugify }}" class="block font-serif uppercase text-lg my-10"> {{item.title}}</a>
             {% endfor %}
 
     </div> 
@@ -40,7 +40,7 @@ members-content:
 
         {% for item in page.members-content %}
         
-        <div id="{{item.title | slugify}}" class="p-5p border-b-2"> 
+        <div id="{{item.title | slugify}}" class="p-5p border-b-2 border-black border-l-2"> 
 
             {% if item.image %}
 

@@ -52,6 +52,7 @@ body a {
    
    #memberspace-login-form label {
        text-transform: uppercase;
+       background-color: none;
 
    }
    

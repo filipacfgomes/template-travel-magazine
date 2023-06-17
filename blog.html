@@ -1,30 +1,24 @@
 ---
 layout: default
-title: Blog Page 
-seo:
-  title:
-  description:
-  social_image:
-  twitter_card:
-  keywords:
-  hide-from-google: false
+title: Blog Page
+banner:
+    heading: Our blog.
+    image_path: /uploads/travel/blog-bg-11-backpack.jpg
 ---
+
+<!------------ Header ------------->
+
+{% include hero-banner.html %}
 
 <!------------------------ Split blog loop (part 1) ------------------------>
 <section class="p-5p">
 
-    <div class="capped-width grid sm:grid-cols-6">
+    <div class="capped-width grid sm:grid-cols-3">
 
         {% for post in site.posts limit:12 %}
 
-           <div class="p-4
-           {% cycle 
-            'col-span-2 bg-slate-200',
-            'col-span-2 bg-slate-300',
-            'col-span-2 bg-slate-400',
-            'col-span-3 bg-slate-100',
-            'col-span-3 bg-slate-200'
-            %}"> 
+           <div class="p-4 aspect-landscape"> 
+            <img class="h-[50vh] w-full object-cover" src="{{post.featured_image}}">
             {% include post-loop-list-item-simple.html %}
 
            </div>
