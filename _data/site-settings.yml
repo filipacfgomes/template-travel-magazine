@@ -19,7 +19,7 @@ navigation:
   - url: /shop
     title: "Shop" 
   - url: "#"
-    title: "Members Login"
+    title: "Members area"
 design:
   dark-text_color: "rgb(60,60,65)"
   medium-text_color: "rgb(90,90,95)"
