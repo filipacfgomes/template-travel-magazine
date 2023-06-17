@@ -1408,11 +1408,13 @@ body a {
 }
 
 #memberspace-login-form input {
-    border: 2px solid blue;
+    border: none;
+    border-bottom: 1px solid black;
    }
    
    #memberspace-login-form label {
-       border: 2px solid yellow;
+       text-transform: uppercase;
+
    }
    
    /* Forgot Email / forgot password text */
@@ -1422,7 +1424,10 @@ body a {
    
    
    #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
-       color: red;
+       text-transform: uppercase;
+       font-family: serif;
+       border: none;
+       background: none;
    }
    
    #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
