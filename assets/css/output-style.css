@@ -861,6 +861,9 @@ video {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
 .m-0 {
   margin: 0px;
 }
@@ -977,6 +980,12 @@ video {
 .mt-5p {
   margin-top: 5%;
 }
+.mt-60 {
+  margin-top: 15rem;
+}
+.mt-48 {
+  margin-top: 12rem;
+}
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -1019,6 +1028,12 @@ video {
 .min-h-\[2vh\] {
   min-height: 2vh;
 }
+.min-h-100 {
+  min-height: 100vh;
+}
+.min-h-\[25vh\] {
+  min-height: 25vh;
+}
 .w-0 {
   width: 0px;
 }
@@ -1036,6 +1051,9 @@ video {
 }
 .max-w-screen-xl {
   max-width: 1280px;
+}
+.flex-1 {
+  flex: 1 1 0%;
 }
 .flex-grow {
   flex-grow: 1;
@@ -1064,6 +1082,9 @@ video {
 }
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.flex-row {
+  flex-direction: row;
 }
 .flex-col {
   flex-direction: column;
@@ -1228,6 +1249,9 @@ video {
 }
 .bg-\[url\(\'\{\{page\.featured_image\}\}\'\)\] {
   background-image: url('{{page.featured_image}}');
+}
+.bg-\[url\(\'\{\{page\.gallery\.\}\}\'\)\] {
+  background-image: url('{{page.gallery.}}');
 }
 .bg-cover {
   background-size: cover;

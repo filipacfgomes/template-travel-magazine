@@ -11,18 +11,22 @@ layout: default
 <!---------- Second section / Before & After ---------->
 
 
-<section class="p-5p">
-    <div class="grid grid-cols-5 max-w-screen-xl mx-auto">
-        <div class="col-span-3 p-8">
-            {% include before-and-after-slider.html %}
-        </div>
-        <div class="col-span-2 p-8 self-center">
-            <h2 class="text-4xl uppercase font-serif tracking-widest mb-6"> Before & After </h2>
-            {{site.data.preset-settings.before-and-after-description_html}}
-        </div>
+<section class="p-10p">
 
+    <h2 class="text-4xl uppercase font-serif tracking-widest mb-6 text-center"> What's Inside </h2>
+
+    <div class="min-h-screen" style="background-image: url('{{page.featured_image}}')"></div>
+
+    <div class="grid grid-cols-6 min-h-[25vh]">   
+        <div class="col-span-1" style="background-image: url('{{page.featured_image}}')"></div>
+        <div class="col-span-1" style="background-image: url('{{page.featured_image}}')"></div>
+        <div class="col-span-1" style="background-image: url('{{page.featured_image}}')"></div>
+        <div class="col-span-1" style="background-image: url('{{page.featured_image}}')"></div>
+        <div class="col-span-1" style="background-image: url('{{page.featured_image}}')"></div>
+        <div class="col-span-1" style="background-image: url('{{page.featured_image}}')"></div>
     </div>
 </section>
+
 <!----------- Third section / How to use your ----------->
 
 <section class="p-5p">
