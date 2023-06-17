@@ -1,25 +1,33 @@
 ---
 layout: default 
+title: Shop.
+description: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breathe. 
+banner:
+    image_path: /uploads/travel/blog-bg-17-desert.jpg
+seo: 
+    title: 
+    description: 
+    social_image: 
+    keywords: 
+    hide-from-google: false
 ---
 
-{% include hero-banner-full.html %}
+<!------- Includes Hero Banner --------->
+
+	{% include hero-banner-full.html %}
+
+
+<!-------- Explore our products section --------->
 
 <section class="p-8 max-w-screen-xl mx-auto">
-
-	<h2> Explore our products </h2> 
-	
-	<div class="grid grid-cols-3 gap-4">
-	
-		{% for product in site.products-presets %}
-		
-		<a href="{{product.url}}"> 
-			<img src="{{product.after_image}}">
-			<h4> {{product.title}}</h4>
-			<p> {{product.price}}</p>
-        </a>
-	
-	{% endfor %}
-	
+	<h2 class="text-center font-serif text-6xl my-16 tracking-wider"> Explore all our products </h2> 
+	<div class="flex justify-center mb-16 gap-10 uppercase font-normal"> 
+		<a class="border bg-black text-white border-black py-3 px-6"> Show all </a>
+		<a class="border border-black py-3 px-6"> Travel Guides </a>
+		<a class="border border-black py-3 px-6"> Lightroom Presets </a>
 	</div>
+
+
+	{% include related-products.html %}
 	
 </section>

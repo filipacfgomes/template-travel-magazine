@@ -22,8 +22,8 @@ layout: default
 
 <!----------- Third section / Table of Contents & What's included ------------->
 
-<section class="grid grid-cols-3">
-    <div class="col-span-2 p-16">
+<section class="grid grid-cols-3 p-5p gap-16">
+    <div class="col-span-2">
         <h2 class="text-4xl uppercase font-serif tracking-widest mb-8 pb-5 border-b-2 border-black"> Table of contents </h2>
                 
             {% for item in site.data.guide-settings.content-table %}
@@ -38,7 +38,7 @@ layout: default
             {% endfor %}  
     </div>
 
-    <div class="col-span-1 p-16">
+    <div class="col-span-1">
         <h2 class="text-4xl uppercase font-serif tracking-widest mb-6"> What's Included </h2>
         <ul class="mb-5"> 
             <li> - Recomendations </li>
@@ -61,4 +61,6 @@ layout: default
 
 <!---------- Related Products ----------->
 
-{% include related-products.html %}
+{% assign relevant-products = site.products-guides | where_exp:"product","product.url != page.url" %}
+
+{% include related-products.html relevant-products=relevant-products %}
