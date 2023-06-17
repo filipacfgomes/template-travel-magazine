@@ -18,7 +18,7 @@ navigation:
     title: "Blog"
   - url: /shop
     title: "Shop" 
-  - url: /members-area
+  - url: /login-area
     title: "Members area"
 design:
   dark-text_color: "rgb(60,60,65)"
