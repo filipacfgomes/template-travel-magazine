@@ -1,0 +1,16 @@
+content-table:
+  - title: Europe
+    description: >-
+      <ul> 
+        <li>  Edinburgh, Scotland - The Athens of the North. </li>
+        <li> Madrid, Spain - The Cultural Capital of Spain </li> 
+        <li> Dublin Istanbul, Ireland </li> 
+        <li> Sagrada Familia, Barcelona  </li> 
+      </ul>  
+    
+  - title: Australia
+    description: bla bla bla 2 
+  - title: Asia
+    description: bla bla bla 3
+  - title: Europe 
+    description: bla bla bla 4

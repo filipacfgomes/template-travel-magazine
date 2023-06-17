@@ -20,35 +20,45 @@ layout: default
     
 </section>
 
-<!----------- Third section / How to use your ----------->
+<!----------- Third section / Table of Contents & What's included ------------->
 
-<section class="p-5p">
-    <div class="grid max-w-screen-xl mx-auto grid-cols-6">
-        <div class="col-span-2 p-10p">  
-            <h2 class="text-4xl uppercase font-serif tracking-widest mb-6"> {{site.data.preset-settings.instructions.heading}}</h2>
-            <p> {{site.data.preset-settings.instructions.description}}</p>
-        </div>
-        <div class="p-8 col-span-4">
-            {% include video.html 
-            vimeo-id=site.data.preset-settings.presets-instructions-vimeo-id %}
+<section class="grid grid-cols-3">
+    <div class="col-span-2 p-16">
+        <h2 class="text-4xl uppercase font-serif tracking-widest mb-8 pb-5 border-b-2 border-black"> Table of contents </h2>
+                
+            {% for item in site.data.guide-settings.content-table %}
+            <div class="border-b-2 border-black" x-data="{ open: false }">
+                <button class="flex justify-between w-full my-5" @click="open = ! open">
+                    <h3 class="uppercase font-normal"> {{item.title}} </h3>
+                    <span> Top 10 places to go </span>
+                </button>
+                <div x-show="open" @click.outside="open = false"> <p> {{item.description}} </p></div>
+            </div>
+
+            {% endfor %}  
     </div>
-</section>
 
-<!-------------- Forth section / FAQS ------------>
-
-
-<section class="p-10p">
-    <h2 class="text-4xl uppercase font-serif tracking-widest mb-6 border-b-2 border-black"> FAQ'S </h2>
-        
-     {% for item in site.data.preset-settings.faqs %}
-        <div class="border-b-2 border-black" x-data="{ open: false }">
-            <button @click="open = ! open"><h3 class="uppercase"> {{item.question}} </h3></button>
-            <div x-show="open" @click.outside="open = false"> <p> {{item.answer}} </p></div>
+    <div class="col-span-1 p-16">
+        <h2 class="text-4xl uppercase font-serif tracking-widest mb-6"> What's Included </h2>
+        <ul class="mb-5"> 
+            <li> - Recomendations </li>
+            <li> - Tips </li>
+            <li> - Multiple testimonails </li>
+            <li> - Our favourites places to go </li>
+            <li> - Something cool to do  </li>
+            <li> - What to bring  </li>
+            <li> - My favourites </li>
+            <li> - Recomendations </li>
+            <li> - Recomendations </li>
+        </ul>
+        <div>
+            <a class="bg-black text-white py-2 px-4 uppercase" href="#"> Add to cart </a>
+            <a class="py-2 px-4 fa-heart" href="#""> Add to wishlist </a>
         </div>
-       
-        {% endfor %}
+    </div>
 
 </section>
+
 <!---------- Related Products ----------->
 
 {% include related-products.html %}
