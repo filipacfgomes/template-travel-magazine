@@ -18,13 +18,13 @@ seo:
 
 	<section class="p-5p max-w-screen-xl mx-auto" x-data="{ filter: 'all' }">
 
-		<h2 class="text-center font-serif text-6xl my-8 tracking-wider"> Explore all our products </h2>
+		<h2 class="text-center font-serif text-6xl tracking-wider"> Explore all our products </h2>
 	
 		<div class="filter flex justify-center uppercase p-5p gap-10"> 
  
-				<a class="border border-black py-3 px-6" href="#" @click.prevent="filter = 'all'">All Products </a>
-				<a class="border border-black py-3 px-6" :style="" href="#" @click.prevent="filter = 'guide'"> Travel Guides</a>
-				<a class="border border-black py-3 px-6" href="#" @click.prevent="filter = 'preset'">Presets </a>
+				<a class="border border-black py-3 px-6" href="#" :class="{'active':filter === 'all'}" @click.prevent="filter = 'all'">All Products </a>
+				<a class="border border-black py-3 px-6" href="#" :class="{'active':filter === 'guide'}" @click.prevent="filter = 'guide'"> Travel Guides</a>
+				<a class="border border-black py-3 px-6" href="#" :class="{'active':filter === 'preset'}" @click.prevent="filter = 'preset'">Presets </a>
 		
 		</div>
 	
@@ -55,25 +55,17 @@ seo:
 	</section>
 
 
-<!-------- Explore our products section --------->
+{% comment %}
 
-<section class="p-8 max-w-screen-xl mx-auto">
-	<h2 class="text-center font-serif text-6xl my-16 tracking-wider"> Explore all our products </h2> 
-	<div class="flex justify-center mb-16 gap-10 uppercase font-normal"> 
-		<a class="border bg-black text-white border-black py-3 px-6"> Show all </a>
-		<a class="border border-black py-3 px-6"> Travel Guides </a>
-		<a class="border border-black py-3 px-6"> Lightroom Presets </a>
-	</div>
-
-	<!---------- Related Products ----------->
-
+<!---------- Related Products 
 {% assign relevant-products = site.products-presets | where_exp:"product","product.url != page.url" %}
 
 {% include related-products.html relevant-products=relevant-products %}
 	
-</section>
+</section>  ------- ------> 
 
-<!----------------- Curated Collection ------------->
+
+	<!-------------- Curated Collection ------------ >
 
 <section class="p-5p bg-cover bg-center min-h-[70vh] flex items-center" style="background-image: url('/uploads/travel/blog-bg-10-top-view.jpg');">
 
@@ -84,3 +76,5 @@ seo:
 </div>
 
 </section>
+
+{% endcomment %}

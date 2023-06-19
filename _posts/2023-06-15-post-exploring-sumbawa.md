@@ -8,6 +8,9 @@ banner:
     image_path: /uploads/travel/blog-bg-10-top-view.jpg
 featured_image: /uploads/travel/blog-bg-15-longboard.jpg
 featured: true
+categories:
+  - travel
+  - life
 intro_heading: This is a heading
 seo: 
     title: 

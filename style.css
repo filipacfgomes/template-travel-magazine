@@ -45,6 +45,11 @@ body a {
     letter-spacing: 0.1rem;
 }
 
+.filter .active {
+    color: white;
+    font-size: 1rem;
+}
+
 #memberspace-login-form input {
     border: none;
     border-bottom: 1px solid black;

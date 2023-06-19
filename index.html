@@ -73,17 +73,16 @@ seo:
         <div class="col-span-1"> 
             <ul>    
             {% for item in page.itinerary.destinations %} 
-            <li> 
-                <div class="flex justify-start">{{ item.location }}</div>
-                <div class="flex justify-end">{{ item.date }}</div>
-            </li>
+                <li class="flex content-start border-t border-black py-10 place-content-between"> 
+                    <div class="flex justify-start uppercase">{{ item.location }}</div>
+                    <div class="flex justify-end">{{ item.date }}</div>
+                </li>
             {% endfor %}
             </ul>
         </div>
         <div class="col-span-1 bg-[url('{{ page.itinerary.image.image_path }}')] relative pb-[32vw]"> 
             <div class="bg-background inline-block font-serif px-10 py-2 text-6xl absolute bottom-5"> {{ page.itinerary.image.overlay_text }}</div>
-        </div> 
-       
+        </div>     
     </div> 
 </section>
 

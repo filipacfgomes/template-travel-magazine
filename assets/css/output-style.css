@@ -880,13 +880,17 @@ video {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 .-ml-15p {
   margin-left: -15%;
@@ -1029,9 +1033,6 @@ video {
 .min-h-screen {
   min-height: 100vh;
 }
-.min-h-\[60vh\] {
-  min-height: 60vh;
-}
 .w-0 {
   width: 0px;
 }
@@ -1084,6 +1085,12 @@ video {
 .flex-nowrap {
   flex-wrap: nowrap;
 }
+.place-content-between {
+  place-content: space-between;
+}
+.content-start {
+  align-content: flex-start;
+}
 .items-center {
   align-items: center;
 }
@@ -1111,9 +1118,6 @@ video {
 .gap-4 {
   gap: 1rem;
 }
-.gap-5 {
-  gap: 1.25rem;
-}
 .self-center {
   align-self: center;
 }
@@ -1137,6 +1141,18 @@ video {
 }
 .border-2 {
   border-width: 2px;
+}
+.border-x {
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+.border-y-2 {
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
 }
 .border-b {
   border-bottom-width: 1px;
@@ -1204,9 +1220,6 @@ video {
 }
 .bg-cover {
   background-size: cover;
-}
-.bg-fixed {
-  background-attachment: fixed;
 }
 .bg-bottom {
   background-position: bottom;
@@ -1284,6 +1297,10 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .pb-1\/1 {
   padding-bottom: 100%;
 }
@@ -1304,6 +1321,9 @@ video {
 }
 .text-center {
   text-align: center;
+}
+.align-top {
+  vertical-align: top;
 }
 .font-sans {
   font-family: Montserrat, sans-serif;
@@ -1437,6 +1457,11 @@ body {
 
 body a {
     letter-spacing: 0.1rem;
+}
+
+.filter .active {
+    color: white;
+    font-size: 1rem;
 }
 
 #memberspace-login-form input {
