@@ -16,6 +16,44 @@ seo:
 
 	{% include hero-banner-full.html %}
 
+	<section class="p-5p max-w-screen-xl mx-auto" x-data="{ filter: 'all' }">
+
+		<h2 class="text-center font-serif text-6xl my-8 tracking-wider"> Explore all our products </h2>
+	
+		<div class="filter flex justify-center uppercase p-5p gap-10"> 
+ 
+				<a class="border border-black py-3 px-6" href="#" @click.prevent="filter = 'all'">All Products </a>
+				<a class="border border-black py-3 px-6" :style="" href="#" @click.prevent="filter = 'guide'"> Travel Guides</a>
+				<a class="border border-black py-3 px-6" href="#" @click.prevent="filter = 'preset'">Presets </a>
+		
+		</div>
+	
+		<div class="grid grid-cols-3 gap-4">
+	
+		{% assign all_products = site.products-guides | concat: site.products-presets | sort: 'title'  %}
+	
+		{% for product in all_products %}
+			
+			<div class="{{product.type | slugify }}" x-show="filter === 'all' || filter === '{{ product.type | slugify }}'">
+			
+				<a class="p-2 mb-4 block col-span-1" href="{{ product.url }}">
+					<div class="bg-cover aspect-square" style="background-image:url( '{{ product.featured_image }}' );">
+					</div>
+					<div class="p-5p mt-5">
+						<h3 class="sans-serif text-2xl"> {{ product.title }} </h3>
+						<p class="my-10"> {{product.description}}</p>
+						<p> {{product.price}}</p>
+					</div>
+				</a>
+				
+			</div>
+				
+		{% endfor %}
+	
+		</div>
+	
+	</section>
+
 
 <!-------- Explore our products section --------->
 
