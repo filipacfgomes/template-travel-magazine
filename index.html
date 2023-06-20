@@ -5,6 +5,7 @@ banner:
     heading: A whole new world.
     description: Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breathe.
     image_path: /uploads/travel/blog-bg-12-boat-bikini.jpg
+banner-style-indented: true
 text_blurbs:
     heading: A fascinating heading about the site.  
     description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempora autem consequuntur tempore laudantium eaque, magnam est porro fugiat, qui magni eum dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat, qui magni eum dolores blanditiis iure totam at iste placeat. Veritatis?  dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat,  dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat,  dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat,  dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat, 
@@ -47,7 +48,11 @@ seo:
 
 <section> 
 
+    {%i if page.banner-style-indented == true %}
     {% include hero-banner.html %}
+    {% else %}
+    {% include hero-banner.full.html %}
+    {% endif %}
 
 </section>
 
