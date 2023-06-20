@@ -2,45 +2,51 @@
 layout: default
 title: Homepage
 banner:
-    heading: A whole new world.
-    description: Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breathe.
+    heading: Join us in this adventure.
+    description: >-
+        Surfing teaches you to appreciate the finer things in life, to be
+        present, live in the moment and just breathe.
     image_path: /uploads/travel/blog-bg-12-boat-bikini.jpg
 banner-style-indented: true
 text_blurbs:
-    heading: A fascinating heading about the site.  
-    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempora autem consequuntur tempore laudantium eaque, magnam est porro fugiat, qui magni eum dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat, qui magni eum dolores blanditiis iure totam at iste placeat. Veritatis?  dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat,  dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat,  dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat,  dolores blanditiis iure totam at iste placeat. Veritatis. Magnam est porro fugiat, 
-    image: 
+    heading: A fascinating heading about the site.
+    description: 'Hello, this is filipa and this is me editing the website. '
+    image:
         image_path: /uploads/travel/blog-bg-13-suitcase.jpg
-    button: 
-        url_text: Read More 
+    button:
+        url_text: Read More
         url_link: '#'
 itinerary:
     heading: Upcoming travel destinations
-    image: 
+    image:
         image_path: /uploads/travel/blog-bg-14-greece.jpg
         alt_text: a placeholder alt description
-        overlay_text: Currently in... 
+        overlay_text: Currently in...
     destinations:
-        -   location: Europe
+        -
+            location: Europe
             date: 00 Month - 00 Month 2023
-        -   location: Australia 
-            date: 00 Month - 00 Month 2023 
-        -   location: Asia 
-            date: 00 Month - 00 Month 2023 
-        -   location: Asia 
+        -
+            location: Australia
+            date: 00 Month - 00 Month 2023
+        -
+            location: Asia
+            date: 00 Month - 00 Month 2023
+        -
+            location: Asia
             date: 00 Month - 00 Month 2023
 blog:
     heading: Recently on the blog
     button:
         text: Read More
-        url: "#"
+        url: '#'
 seo:
-  title: 
-  description:
-  social_image:
-  twitter_card:
-  keywords:
-  hide-from-google: false
+    title:
+    description:
+    social_image:
+    twitter_card:
+    keywords:
+    hide-from-google: false
 ---
 <!-- Note - the site header will pull in from the default layout and is editable in the includes folder -->
 
@@ -60,13 +66,13 @@ seo:
 
 <section class="bg-light grid grid-cols-2">
     <div class="col-span-1 ml-32 mt-32 mb-32 flex">  
-        <img class="flex justify-end" src="{{ page.text_blurbs.image.image_path }}">
+        <img class="flex justify-end" src="{{ page.text_blurbs.image.image_path }}" />
     </div>
     <div class="col-span-1 ml-12"> 
         <h2 class="text-6xl -ml-64 md:max-w-md font-serif text-center mt-44 mb-12">{{ page.text_blurbs.heading }}</h2>
-        <p class="mb-16 mr-24">{{ page.text_blurbs.description }}<p>
+        <p class="mb-16 mr-24">{{ page.text_blurbs.description }}</p><p>
         <a class="font-serif text-2xl mb-16 uppercase border-b border-black" href="{{ page.text_blurbs.button.url_link }}"> {{ page.text_blurbs.button.url_text }} </a>
-    </div> 
+    </p></div> 
     
 </section>
 
