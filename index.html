@@ -3,8 +3,7 @@ layout: default
 title: Homepage
 banner:
     heading: Join us in this adventure.
-    description: >-
-        Surfing teaches you to appreciate the finer things in life, to be
+    description: Surfing teaches you to appreciate the finer things in life, to be
         present, live in the moment and just breathe.
     image_path: /uploads/travel/blog-bg-12-boat-bikini.jpg
 banner-style-indented: true
@@ -54,7 +53,7 @@ seo:
 
 <section> 
 
-    {%i if page.banner-style-indented == true %}
+    {% if page.banner-style-indented == true %}
     {% include hero-banner.html %}
     {% else %}
     {% include hero-banner.full.html %}
