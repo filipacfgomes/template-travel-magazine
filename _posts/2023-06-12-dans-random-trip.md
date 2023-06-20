@@ -1,10 +1,10 @@
 ---
 layout: modular-post
 title: Dans Random trip
-description:
+description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum,
   ab, eum dolore perspiciatis tenetur alias aspernatur
-author: '`dan'
+author: Filipa
 featured: true
 categories:
   - travel
