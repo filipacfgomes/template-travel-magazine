@@ -7,7 +7,7 @@ banner:
         Surfing teaches you to appreciate the finer things in life, to be
         present, live in the moment and just breathe.
     image_path: /uploads/travel/blog-bg-12-boat-bikini.jpg
-banner-style-indented: false
+banner-style-indented: true
 text_blurbs:
     heading: A fascinating heading about the site.
     description: 'Hello, this is filipa and this is me editing the website. '
@@ -57,7 +57,7 @@ seo:
     {% if page.banner-style-indented == true %}
     {% include hero-banner.html %}
     {% else %}
-    {% include hero-banner-full.html %}
+    {% include hero-banner.full.html %}
     {% endif %}
 
 </section>

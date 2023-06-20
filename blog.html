@@ -3,9 +3,8 @@ layout: default
 title: Blog Page
 banner:
     heading: Our blog.
-    image_path: /uploads/travel/blog-bg-11-backpack.jpg
+    image_path: /uploads/048.jpg
 ---
-
 <!------------ Header ------------->
 
 {% include hero-banner.html %}
@@ -18,7 +17,7 @@ banner:
         {% for post in site.posts limit:12 %}
 
            <div class="p-4 aspect-landscape"> 
-            <img class="h-[50vh] w-full object-cover" src="{{post.featured_image}}">
+            <img class="h-[50vh] w-full object-cover" src="{{post.featured_image}}" />
             {% include post-loop-list-item-simple.html %}
 
            </div>
